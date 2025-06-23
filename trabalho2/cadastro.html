@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html lang = "PT-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Clínica ABC Health - Cadastro</title>
-    </head>
-    <body>
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Esse aqui e um site da Clínica ABC Health"
+    />
+    <title>Clínica ABC Health - Cadastro</title>
+  </head>
+  <body>
     <header>
-    <h1>Clínica ABC Health</h1>
-  </header>
+      <h1>Clínica ABC Health</h1>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="galeria.html">Galeria</a></li>
-      <li><a href="cadastro.html">Cadastro</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h2>Cadastro de paciente</h2>
-    <form action = "cadastraPaciente.php" method = "post">
-        <label for = "nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required><br>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Cadastro de paciente</h2>
+      <form action="cadastraPaciente.php" method="post">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required /><br />
 
-        <label for ="cpf">CPF:</label>
-        <input type ="number" id="cpf" name="cpf" required><br>
+          <label for="cpf">CPF:</label>
+          <input type="number" id="cpf" name="cpf" required /><br />
 
-        <label for ="rua">Rua:</label>
-        <input type ="text" id="rua" name="rua" required><br>
+          <label for="rua">Rua:</label>
+          <input type="text" id="rua" name="rua" required /><br />
 
-        <label for ="rg">RG:</label>
-        <input type ="text" id="rg" name="rg" required><br>
-
+          <label for="rg">RG:</label>
+          <input type="text" id="rg" name="rg" required /><br />
+        </div>
         <button>Cadastrar</button>
-    </form>
-  </main>
+      </form>
+    </main>
   </body>
 </html>
