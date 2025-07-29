@@ -1,0 +1,57 @@
+body{
+    background-color: yellow;
+    justify-content: center;
+    padding: 20px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid,
+input[type="number"]:invalid {
+    background-color: #ffe6e6;
+}
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="number"]:valid {
+     background-color: #89eb89;
+}
+
+input:invalid + span::after {
+  content: 'X';
+  color: red;
+  padding-left: 5px;
+}
+
+
+input:valid + span::after {
+  content: '✓';
+  color: green;
+  padding-left: 5px;
+}
+
+input[required]{
+    background-color: pink;
+
+}
+
+#idUnico{
+    color:red;
+    text-align: center;
+}
+
+.enviar-button{
+    color: blue;
+    text-transform: uppercase;
+}
+fieldset{
+    background-color: aqua;
+    border: 1px solid blue;
+    padding: 30px;
+}
+::placeholder {
+  color: red;
+  font-style: italic;
+}

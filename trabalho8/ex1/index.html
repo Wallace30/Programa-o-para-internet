@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Exercício</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <main>
+        <input type="text">
+        <button>Adicionar</button>
+        <ol>
+            <li>Shows</li>
+            <li>Filmes</li>
+        </ol>
+        <script>
+            const botaoadicionar = document.querySelector("button");
+            const campoInteresse = document.querySelector("input"); 
+
+            botaoadicionar.addEventListener("click", function () {
+                const novoLi = document.createElement("li");
+                const novoSpan = document.createElement("span");
+                const novoBotao = document.createElement("button");
+
+                novoSpan.textContent = campoInteresse.value;
+                novoBotao.textContent = 'X';
+
+                novoLi.appendChild(novoSpan);
+                novoLi.appendChild(novoBotao);
+                const listaInteresses = document.querySelector("ol");
+                listaInteresses.appendChild(novoLi);
+
+                novoBotao.onclick = function () {
+                    listaInteresses.removeChild(novoLi);
+                }
+
+                campoInteresse.value = '';
+            });
+        </script>
+    </main>
+</body>
+</html>

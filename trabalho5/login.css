@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background-color: #dcdcdc;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+main {
+  background-color: white;
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input, button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px gray;
+}

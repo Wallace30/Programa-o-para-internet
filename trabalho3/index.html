@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Formulário de Cadastro</h1>
-    <form action="cadastroCliente.php" method="post" enctype="multipart/form-data">
+    <form enctype="multipart/form-data" action="cadastraCliente.php" method="post">
       <input type="hidden" name="origem" value="trabalho3">
 
       <fieldset>
@@ -43,7 +43,7 @@
         </div>
 
         <div>
-          Sexo:
+          <label>Sexo:</label>
           <input type="radio" id="masc" name="sexo" value="Masculino">
           <label for="masc">Masculino</label>
           <input type="radio" id="fem" name="sexo" value="Feminino">
@@ -56,7 +56,7 @@
         </div>
 
         <div>
-          <label for="idUnico">Código Único do Cliente:</label>
+          <label for="idUnico">Código do Cliente:</label>
           <input type="text" id="idUnico" name="idUnico" value="ABC123" readonly>
         </div>
       </fieldset>
@@ -141,7 +141,7 @@
 
         <div>
           <label for="infoComp">Informações complementares:</label>
-          <textarea id="infoComp" name="infoComp" rows="4" cols="50" placeholder="Escreva algo aqui"></textarea>
+          <textarea id="infoComp" name="infoComp" rows="4" cols="20" placeholder="Escreva algo aqui"></textarea>
         </div>
 
         <div>

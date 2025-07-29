@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Esse aqui é um site da Clínica ABC Health">
+  <title>Clínica ABC Health - Parte Galeria</title>
+  <link rel="stylesheet" href="galeria.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Clínica ABC Health</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Nossa Estrutura</h2>
+
+    <div class="galeria">
+      <table>
+        <tr>
+          <td><img src="images/image1.png" alt="Imagem 1" /></td>
+          <td><img src="images/image2.png" alt="Imagem 2" /></td>
+          <td><img src="images/image3.png" alt="Imagem 3" /></td>
+          <td><img src="images/image4.png" alt="Imagem 4" /></td>
+        </tr>
+        <tr>
+          <td><img src="images/image5.png" alt="Imagem 5" /></td>
+          <td><img src="images/image6.png" alt="Imagem 6" /></td>
+          <td><img src="images/image7.png" alt="Imagem 7" /></td>
+          <td><img src="images/image8.png" alt="Imagem 8" /></td>
+        </tr>
+      </table>
+    </div>
+  </main>
+  <script>
+      const imgs = document.querySelectorAll('img');
+
+imgs.forEach(img => {
+  img.onmouseenter = () => img.classList.add("destaca");
+  img.onmouseleave = () => img.classList.remove("destaca");
+});
+
+  </script>
+
+  <footer>
+      <address>Endereço: Rua UFU, 123 - Uberlândia</address>
+    </footer>
+
+</body>
+</html>
