@@ -1,36 +1,23 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
-    padding: 20px
+p{
+    display: inline-block;
 }
 ol {
-    margin-top: 15px;
-    padding-left: 30px; /* afasta número do item */
+    margin-top: 1px;
 }
-
-li {
-    background-color: #cce0ff;
-    border-radius: 6px;
+ol li {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1.5rem;
+    width: 20%;
+    background-color: aqua;
     margin-bottom: 8px;
-    padding: 6px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-position: outside; /* número fora do bloco */
-    width: 250px;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
-li span {
-    font-weight: bold;
+ol button {
+    margin-left: auto; 
 }
-
-li button {
-    background-color: transparent;
-    border: none;
+ol button:hover {
     color: red;
-    font-size: 18px;
-    font-weight: bold;
-}
 
-li button:hover {
-    color: darkred;
 }
